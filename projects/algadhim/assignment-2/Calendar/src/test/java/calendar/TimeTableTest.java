@@ -741,6 +741,38 @@ public class TimeTableTest {
 
 	LinkedList<Appt> ApptsList = new LinkedList<Appt>();
 	ApptsList.add(appt_1);
+
+
+		//create first and last days
+		//GregorianCalendar today = new GregorianCalendar(thisYear,thisMonth,thisDay);
+		GregorianCalendar first = new GregorianCalendar(2017, 6, 5);
+		GregorianCalendar last = new GregorianCalendar(2017, 6, 6);
+
+		//try	{
+		timetable.getApptRange(ApptsList, first, last);
+		//} catch(NullPointerException e)	{
+
+		//}
+	 }
+
+	 @Test
+	  public void test20()  throws Throwable  {
+		  TimeTable timetable = new TimeTable();
+
+		  //Create a linked list of appts to be used
+	 	  Appt appt_1 = new Appt(1,
+	 		         10 ,
+	 		         5 ,
+	 		         6 ,
+	 		         2017 ,
+	 		         "Appt_1",
+	 		         "");
+
+	 	int [] arr = {1,2,3};
+	 	appt_1.setRecurrence(arr, 1, 1, 10);
+
+	LinkedList<Appt> ApptsList = new LinkedList<Appt>();
+	ApptsList.add(appt_1);
 	assertTrue(appt_1.isRecurring());
 
 		//create first and last days
@@ -754,5 +786,248 @@ public class TimeTableTest {
 
 		//}
 	 }
+
+	 @Test
+	  public void test21()  throws Throwable  {
+		  TimeTable timetable = new TimeTable();
+
+		  //Create a linked list of appts to be used
+			Appt appt_1 = new Appt(1,
+						10 ,
+						5 ,
+						0 ,
+						2017 ,
+						"Appt_1",
+						"");
+
+			Appt appt_2 = new Appt(5,
+						15 ,
+						5 ,
+						0 ,
+						2017 ,
+						"Appt_2",
+						"");
+
+			Appt appt_3 = new Appt(5,
+						20 ,
+						6 ,
+						0 ,
+						2017 ,
+						"Appt_3",
+						"");
+
+
+	   LinkedList<Appt> ApptsList = new LinkedList<Appt>();
+	   ApptsList.add(appt_1);
+	   ApptsList.add(appt_2);
+	   ApptsList.add(appt_3);
+
+		assertFalse(appt_1.getValid());
+		assertFalse(appt_2.getValid());
+		assertFalse(appt_3.getValid());
+	   //create first and last days
+	   //GregorianCalendar today = new GregorianCalendar(thisYear,thisMonth,thisDay);
+	   GregorianCalendar first = new GregorianCalendar(2017, 6, 4);
+	   GregorianCalendar last = new GregorianCalendar(2017, 6, 7);
+
+	   try	{
+			timetable.getApptRange(ApptsList, first, last);
+	   } catch(DateOutOfRangeException e)	{
+
+	   }
+
+
+   }
+
+	@Test
+	 public void test22()  throws Throwable  {
+		 TimeTable timetable = new TimeTable();
+
+		 //Create a linked list of appts to be used
+		 Appt appt_1 = new Appt(1,
+					  10 ,
+					  5 ,
+					  6 ,
+					  2017 ,
+					  "Appt_1",
+					  "");
+
+	  int [] arr = {};
+	  appt_1.setRecurrence(arr, 1, 1, 10);
+
+	LinkedList<Appt> ApptsList = new LinkedList<Appt>();
+	ApptsList.add(appt_1);
+	assertTrue(appt_1.isRecurring());
+
+	  //create first and last days
+	  //GregorianCalendar today = new GregorianCalendar(thisYear,thisMonth,thisDay);
+	  GregorianCalendar first = new GregorianCalendar(2017, 6, 5);
+	  GregorianCalendar last = new GregorianCalendar(2017, 6, 6);
+
+	  //try	{
+	  timetable.getApptRange(ApptsList, first, last);
+	  //} catch(NullPointerException e)	{
+
+	  //}
+	}
+
+	@Test
+	 public void test23()  throws Throwable  {
+		 TimeTable timetable = new TimeTable();
+
+		 //Create a linked list of appts to be used
+		 Appt appt_1 = new Appt(1,
+					  10 ,
+					  5 ,
+					  6 ,
+					  2017 ,
+					  "Appt_1",
+					  "");
+
+	  int [] arr = {1,2};
+	  appt_1.setRecurrence(arr, 2, 2, 10);
+
+	LinkedList<Appt> ApptsList = new LinkedList<Appt>();
+	ApptsList.add(appt_1);
+	assertTrue(appt_1.isRecurring());
+
+	  //create first and last days
+	  //GregorianCalendar today = new GregorianCalendar(thisYear,thisMonth,thisDay);
+	  GregorianCalendar first = new GregorianCalendar(2017, 6, 5);
+	  GregorianCalendar last = new GregorianCalendar(2017, 6, 6);
+
+	  //try	{
+	  timetable.getApptRange(ApptsList, first, last);
+	  //} catch(NullPointerException e)	{
+
+	  //}
+	}
+
+	@Test
+	 public void test24()  throws Throwable  {
+		 TimeTable timetable = new TimeTable();
+
+		 //Create a linked list of appts to be used
+		 Appt appt_1 = new Appt(1,
+					  10 ,
+					  5 ,
+					  6 ,
+					  2017 ,
+					  "Appt_1",
+					  "");
+
+	  int [] arr = {1,2};
+	  appt_1.setRecurrence(arr, 3, 3, 10);
+
+	LinkedList<Appt> ApptsList = new LinkedList<Appt>();
+	ApptsList.add(appt_1);
+	assertTrue(appt_1.isRecurring());
+
+	  //create first and last days
+	  //GregorianCalendar today = new GregorianCalendar(thisYear,thisMonth,thisDay);
+	  GregorianCalendar first = new GregorianCalendar(2017, 6, 5);
+	  GregorianCalendar last = new GregorianCalendar(2017, 6, 6);
+
+	  //try	{
+	  timetable.getApptRange(ApptsList, first, last);
+	  //} catch(NullPointerException e)	{
+
+	  //}
+	}
+
+	@Test
+	 public void test25()  throws Throwable  {
+		 TimeTable timetable = new TimeTable();
+
+		 //Create a linked list of appts to be used
+		 Appt appt_1 = new Appt(1,
+					  10 ,
+					  5 ,
+					  6 ,
+					  2017 ,
+					  "Appt_1",
+					  "");
+
+	  int [] arr = {1,2,9};
+	  appt_1.setRecurrence(arr, 2, 2, 10);
+
+	LinkedList<Appt> ApptsList = new LinkedList<Appt>();
+	ApptsList.add(appt_1);
+	assertTrue(appt_1.isRecurring());
+
+	  //create first and last days
+	  //GregorianCalendar today = new GregorianCalendar(thisYear,thisMonth,thisDay);
+	  GregorianCalendar first = new GregorianCalendar(2017, 6, 5);
+	  GregorianCalendar last = new GregorianCalendar(2017, 6, 6);
+
+	  //try	{
+	  timetable.getApptRange(ApptsList, first, last);
+	  //} catch(NullPointerException e)	{
+
+	  //}
+	}
+
+	@Test
+	 public void test26()  throws Throwable  {
+		 TimeTable timetable = new TimeTable();
+
+		 //Create a linked list of appts to be used
+		 Appt appt_1 = new Appt(1,
+					  10 ,
+					  5 ,
+					  6 ,
+					  2017 ,
+					  "Appt_1",
+					  "");
+
+	  int [] arr = {1,2};
+	  appt_1.setRecurrence(arr, 7, 7, 10);
+
+	LinkedList<Appt> ApptsList = new LinkedList<Appt>();
+	ApptsList.add(appt_1);
+	assertTrue(appt_1.isRecurring());
+
+	  //create first and last days
+	  //GregorianCalendar today = new GregorianCalendar(thisYear,thisMonth,thisDay);
+	  GregorianCalendar first = new GregorianCalendar(2017, 6, 5);
+	  GregorianCalendar last = new GregorianCalendar(2017, 6, 6);
+
+	  //try	{
+	  timetable.getApptRange(ApptsList, first, last);
+	  //} catch(NullPointerException e)	{
+
+	  //}
+	}
+	@Test
+	 public void test27()  throws Throwable  {
+		 TimeTable timetable = new TimeTable();
+
+		 //Create a linked list of appts to be used
+		 Appt appt_1 = new Appt(1,
+					  10 ,
+					  5 ,
+					  6 ,
+					  2018 ,
+					  "Appt_1",
+					  "");
+
+	  int [] arr = {1,2};
+	  appt_1.setRecurrence(arr, 3, 3, 10);
+
+	LinkedList<Appt> ApptsList = new LinkedList<Appt>();
+	ApptsList.add(appt_1);
+	assertTrue(appt_1.isRecurring());
+
+	  //create first and last days
+	  //GregorianCalendar today = new GregorianCalendar(thisYear,thisMonth,thisDay);
+	  GregorianCalendar first = new GregorianCalendar(2017, 6, 5);
+	  GregorianCalendar last = new GregorianCalendar(2017, 6, 6);
+
+	  //try	{
+	  timetable.getApptRange(ApptsList, first, last);
+	  //} catch(NullPointerException e)	{
+
+	  //}
+	}
 //add more unit tests as you needed
 }
