@@ -58,7 +58,7 @@ public class TimeTableTest {
 		//create first and last days
 		//GregorianCalendar today = new GregorianCalendar(thisYear,thisMonth,thisDay);
 		GregorianCalendar first = new GregorianCalendar(2017, 6, 4);
-		GregorianCalendar last = new GregorianCalendar(2017, 6, 7);
+		GregorianCalendar last = new GregorianCalendar(2018, 6, 7);
 
 		try	{
 			timetable.getApptRange(ApptsList, last, first);
