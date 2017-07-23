@@ -249,11 +249,11 @@ public class TimeTableTest {
 		GregorianCalendar first = new GregorianCalendar(2017, 6, 5);
 		GregorianCalendar last = new GregorianCalendar(2017, 7, 6);
 
-		//try	{
-			timetable.getApptRange(ApptsList, first, last);
-		//} catch(NullPointerException e)	{
+		try	{
+			 LinkedList<CalDay> updatedList = timetable.getApptRange(ApptsList, first, last);
+		} catch(NullPointerException e)	{
 
-		//}
+		}
 	 }
 
 	 @Test
@@ -281,11 +281,11 @@ public class TimeTableTest {
 	   GregorianCalendar first = new GregorianCalendar(2017, 6, 5);
 	   GregorianCalendar last = new GregorianCalendar(2017, 6, 6);
 
-	   //try	{
-			timetable.getApptRange(ApptsList, first, last);
-	   //} catch(NullPointerException e)	{
+		try	{
+			 LinkedList<CalDay> updatedList = timetable.getApptRange(ApptsList, first, last);
+		} catch(NullPointerException e)	{
 
-	   //}
+		}
 	 }
 
 	 @Test
@@ -716,11 +716,11 @@ public class TimeTableTest {
 		GregorianCalendar first = new GregorianCalendar(2017, 6, 5);
 		GregorianCalendar last = new GregorianCalendar(2020, 7, 6);
 
-		//try	{
-		timetable.getApptRange(ApptsList, first, last);
-		//} catch(NullPointerException e)	{
+		try	{
+ 	  		LinkedList<CalDay> updatedList = timetable.getApptRange(ApptsList, first, last);
+ 	  } catch(NullPointerException e)	{
 
-		//}
+ 	  }
 	 }
 
 	 @Test
@@ -748,11 +748,11 @@ public class TimeTableTest {
 		GregorianCalendar first = new GregorianCalendar(2017, 6, 5);
 		GregorianCalendar last = new GregorianCalendar(2017, 6, 6);
 
-		//try	{
-		timetable.getApptRange(ApptsList, first, last);
-		//} catch(NullPointerException e)	{
+		try	{
+ 	  		LinkedList<CalDay> updatedList = timetable.getApptRange(ApptsList, first, last);
+ 	  } catch(NullPointerException e)	{
 
-		//}
+ 	  }
 	 }
 
 	 @Test
@@ -780,11 +780,11 @@ public class TimeTableTest {
 		GregorianCalendar first = new GregorianCalendar(2017, 6, 5);
 		GregorianCalendar last = new GregorianCalendar(2017, 6, 6);
 
-		//try	{
-		timetable.getApptRange(ApptsList, first, last);
-		//} catch(NullPointerException e)	{
+		try	{
+ 	  		LinkedList<CalDay> updatedList = timetable.getApptRange(ApptsList, first, last);
+ 	  } catch(NullPointerException e)	{
 
-		//}
+ 	  }
 	 }
 
 	 @Test
@@ -864,11 +864,11 @@ public class TimeTableTest {
 	  GregorianCalendar first = new GregorianCalendar(2017, 6, 5);
 	  GregorianCalendar last = new GregorianCalendar(2017, 6, 6);
 
-	  //try	{
-	  timetable.getApptRange(ApptsList, first, last);
-	  //} catch(NullPointerException e)	{
+	  try	{
+	  		LinkedList<CalDay> updatedList = timetable.getApptRange(ApptsList, first, last);
+	  } catch(NullPointerException e)	{
 
-	  //}
+	  }
 	}
 
 	@Test
@@ -896,11 +896,11 @@ public class TimeTableTest {
 	  GregorianCalendar first = new GregorianCalendar(2017, 6, 5);
 	  GregorianCalendar last = new GregorianCalendar(2017, 6, 6);
 
-	  //try	{
-	  timetable.getApptRange(ApptsList, first, last);
-	  //} catch(NullPointerException e)	{
+	  try	{
+	  		LinkedList<CalDay> updatedList = timetable.getApptRange(ApptsList, first, last);
+	  } catch(NullPointerException e)	{
 
-	  //}
+	  }
 	}
 
 	@Test
@@ -928,11 +928,11 @@ public class TimeTableTest {
 	  GregorianCalendar first = new GregorianCalendar(2017, 6, 5);
 	  GregorianCalendar last = new GregorianCalendar(2017, 6, 6);
 
-	  //try	{
-	  timetable.getApptRange(ApptsList, first, last);
-	  //} catch(NullPointerException e)	{
+	  try	{
+	  		LinkedList<CalDay> updatedList = timetable.getApptRange(ApptsList, first, last);
+	  } catch(NullPointerException e)	{
 
-	  //}
+	  }
 	}
 
 	@Test
@@ -960,11 +960,11 @@ public class TimeTableTest {
 	  GregorianCalendar first = new GregorianCalendar(2017, 6, 5);
 	  GregorianCalendar last = new GregorianCalendar(2017, 6, 6);
 
-	  //try	{
-	  timetable.getApptRange(ApptsList, first, last);
-	  //} catch(NullPointerException e)	{
+	  try	{
+	  		LinkedList<CalDay> updatedList = timetable.getApptRange(ApptsList, first, last);
+	  } catch(NullPointerException e)	{
 
-	  //}
+	  }
 	}
 
 	@Test
@@ -992,11 +992,11 @@ public class TimeTableTest {
 	  GregorianCalendar first = new GregorianCalendar(2017, 6, 5);
 	  GregorianCalendar last = new GregorianCalendar(2017, 6, 6);
 
-	  //try	{
-	  timetable.getApptRange(ApptsList, first, last);
-	  //} catch(NullPointerException e)	{
+	  try	{
+	  		LinkedList<CalDay> updatedList = timetable.getApptRange(ApptsList, first, last);
+	  } catch(NullPointerException e)	{
 
-	  //}
+	  }
 	}
 	@Test
 	 public void test27()  throws Throwable  {
@@ -1023,11 +1023,12 @@ public class TimeTableTest {
 	  GregorianCalendar first = new GregorianCalendar(2017, 6, 5);
 	  GregorianCalendar last = new GregorianCalendar(2017, 6, 6);
 
-	  //try	{
-	  timetable.getApptRange(ApptsList, first, last);
-	  //} catch(NullPointerException e)	{
+	  try	{
+	  		LinkedList<CalDay> updatedList = timetable.getApptRange(ApptsList, first, last);
+			assertEquals(1, updatedList.size());
+	  } catch(NullPointerException e)	{
 
-	  //}
+	  }
 	}
 //add more unit tests as you needed
 }
