@@ -174,7 +174,6 @@ public void testYourSecondPartition(){
   assertTrue(urlVal.isValid("http://www.google.com"));
   assertTrue(urlVal.isValid("http://go.com"));
   assertTrue(urlVal.isValid("http://255.255.255.255"));
-
   assertTrue(urlVal.isValid("http://go.au"));
   //assertFalse(urlVal.isValid("http://256.256.256.256"));
   assertFalse(urlVal.isValid("http://1.2.3.4.5"));
